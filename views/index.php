@@ -14,6 +14,15 @@
         </a>
     </h3>
     <div><?php echo $article['text']; ?></div>
+    <p>
+        Дата публикации: <?php echo $article['date']; ?>
+    </p>
+    <p>
+        По материалам:
+        <a href="<?php echo $article['source']; ?>">
+            <?php echo $article['source']; ?>
+        </a>
+    </p>
 </article>
 <?php endforeach; ?>
 </body>
