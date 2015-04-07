@@ -5,7 +5,7 @@
     <title></title>
 </head>
 <body>
-<h1>Новости</h1>
+<h1>Новости из мира нумизматики</h1>
 <?php foreach ($news as $article) : ?>
 <article>
     <h3>
