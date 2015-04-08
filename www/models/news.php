@@ -29,8 +29,20 @@ function addOneNews()
     $source = mysql_real_escape_string($_POST['source']);
     $author = mysql_real_escape_string($_POST['author']);
 
-    $sql = "INSERT INTO news(title, text, date, source, author)
-            VALUES ('".$title."', '".$text."', '".$date."', '".$source."', '".$author."')";
+    $sql = "INSERT
+            INTO news(
+                title,
+                text,
+                date,
+                source,
+                author
+            )
+            VALUES (
+                '" . $title . "',
+                '" . $text . "',
+                '" . $date . "',
+                '" . $source . "',
+                '" . $author . "'
+            )";
     return dbAddOneByQuery($sql);
-
 }
