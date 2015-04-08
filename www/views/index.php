@@ -19,9 +19,10 @@
     <div><?php echo $article['text']; ?></div>
     <p>
         Дата публикации: <?php echo $article['date']; ?>
-    </p>
-    <p>
-        По материалам:
+        <br>
+        Автор новости: <?php echo $article['author']; ?>
+        <br>
+        Источник:
         <a href="<?php echo $article['source']; ?>">
             <?php echo $article['source']; ?>
         </a>

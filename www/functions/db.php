@@ -22,3 +22,7 @@ function dbFindOneByQuery($sql)
     return dbFindAllByQuery($sql)[0];
 }
 
+function dbAddOneByQuery($sql)
+{
+    return mysql_query($sql);
+}
