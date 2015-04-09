@@ -2,6 +2,7 @@
 
 require __DIR__ . '/../functions/db.php';
 
+// функция выборки всех новостей из базы данных и сотртировки их по дате
 function findAllNews()
 {
     $sql = 'SELECT *
@@ -11,6 +12,7 @@ function findAllNews()
     return $ret;
 }
 
+// функция нахождения одной конкретной новости по GET параметру
 function findOneById($id)
 {
     $sql = 'SELECT *
@@ -20,6 +22,7 @@ function findOneById($id)
     return $ret;
 }
 
+// функция добавления одной новости в базу данных
 function addOneNews()
 {
     dbConnect();
