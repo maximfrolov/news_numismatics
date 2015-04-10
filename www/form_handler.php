@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST['add'])) {
     header('Location: /add.php');
     exit;
@@ -6,3 +7,4 @@ if (isset($_POST['add'])) {
 else {
    echo 'Заполните поля формы!';
 }
+

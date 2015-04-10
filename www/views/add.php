@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form method="post" action="/add.php">
+<form method="post" action="/form_handler.php">
     Название новости:
     <br>
     <input type="text" name="title">
