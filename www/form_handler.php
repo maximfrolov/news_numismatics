@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST['add'])) {
-    header('Location: /add.php');
+    header('Location: /views/form.php');
     exit;
 }
 else {
