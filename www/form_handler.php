@@ -1,10 +1,20 @@
 <?php
+session_start();
 
-if (isset($_POST['add'])) {
-    header('Location: /views/form.php');
+require __DIR__ . '/models/news.php';
+
+if (isset($_POST['add']) &&
+    !empty($_POST['title']) &&
+    !empty($_POST['text']))
+{
+    addOneNews();
+    header('Location: /add.php');
     exit;
 }
-else {
-   echo 'Заполните поля формы!';
+else
+{
+   $_SESSION['error'] = 'Заполните поля формы!';
+    header('Location: /add.php');
+    exit;
 }
 
