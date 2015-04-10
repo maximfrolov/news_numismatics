@@ -8,13 +8,13 @@ if (isset($_POST['add']) &&
     !empty($_POST['text']))
 {
     addOneNews();
-    header('Location: /add.php');
+    header('Location: /form.php');
     exit;
 }
 else
 {
    $_SESSION['error'] = 'Заполните поля формы!';
-    header('Location: /add.php');
+    header('Location: /form.php');
     exit;
 }
 

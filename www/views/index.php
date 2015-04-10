@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Новости из мира нумизматики</h1>
-<a href="/add.php">
+<a href="/form.php">
     Добавить новость
 </a>
 <?php foreach ($news as $article) : ?>
