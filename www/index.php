@@ -1,7 +1,9 @@
 <?php
 
-require __DIR__ . '/models/news.php';
+require_once __DIR__ . '/models/news.php';
 
-$news = findAllNews();
+$news = new News();
+$items = $news->findAllNews();
 
 include __DIR__ . '/views/index.php';
+

@@ -9,7 +9,7 @@
 <a href="/form.php">
     Добавить новость
 </a>
-<?php foreach ($news as $article) : ?>
+<?php foreach ($items as $article) : ?>
 <article>
     <h3>
         <a href="/article.php?id=<?php echo $article['id']; ?>">

@@ -2,6 +2,7 @@
 
 require __DIR__ . '/models/news.php';
 
-$article = findOneById($_GET['id']);
+$article = new News();
+$item = $article->findOnById($_GET['id']);
 
 include __DIR__ . '/views/article.php';
