@@ -8,17 +8,17 @@
 <h1>Новость дня!</h1>
 <article>
     <h3>
-        <?php echo $item['title']; ?>
+        <?php echo $article['title']; ?>
     </h3>
-    <div><?php echo $item['text']; ?></div>
+    <div><?php echo $article['text']; ?></div>
     <p>
-        Дата публикации: <?php echo $item['date']; ?>
+        Дата публикации: <?php echo $article['date']; ?>
         <br>
-        Автор новости: <?php echo $item['author']; ?>
+        Автор новости: <?php echo $article['author']; ?>
         <br>
         Источник:
-        <a href="<?php echo $item['source']; ?>">
-            <?php echo $item['source']; ?>
+        <a href="<?php echo $article['source']; ?>">
+            <?php echo $article['source']; ?>
         </a>
     </p>
     <p>
