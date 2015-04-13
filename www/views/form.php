@@ -40,9 +40,10 @@ if (!empty($_SESSION['error'])) {          // если есть ошибка п�
         </p>
     </div>
 </form>
-    <p><a href="/index.php">
+    <p>
+        <a href="/index.php">
         Назад
-    </a>
-</p>
+        </a>
+    </p>
 </body>
 </html>
