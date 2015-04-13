@@ -18,28 +18,31 @@ if (!empty($_SESSION['error'])) {          // если есть ошибка п�
 ?>
 <form method="post" action="/form_handler.php">
     Название новости:
-    <br>
+    <div>
     <input type="text" name="title">
-    <br>
+    </div>
     Текст новости:
-    <br>
+    <div>
     <textarea cols="50" rows="10" name="text"></textarea>
-    <br>
+    </div>
     <input type="hidden" name="date" value="<?php echo date('Y-m-d'); ?>">
     Автор новости:
-    <br>
+    <div>
     <input type="text" name="author">
-    <br>
+    </div>
     Ссылка на источник:
-    <br>
+    <div>
     <input type="text" name="source">
-    <br>
-    <p>
-        <input type="submit" name="add" value="Добавить">
-    </p>
+    </div>
+    <div>
+        <p>
+            <input type="submit" name="add" value="Добавить">
+        </p>
+    </div>
 </form>
-<a href="/index.php">
-    Назад
-</a>
+    <p><a href="/index.php">
+        Назад
+    </a>
+</p>
 </body>
 </html>
