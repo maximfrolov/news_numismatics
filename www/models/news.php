@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../classes/db.php';
+require_once __DIR__ . '/../classes/Db.php';
 
 function findAllNews()
 {
