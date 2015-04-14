@@ -13,7 +13,10 @@ class Db
     {
         $res = mysql_query($sql);
         $ret = [];
-        while (false !== ($row = mysql_fetch_array($res))) {
+        if (false === $res) {
+            return false;
+        }
+        while ($row = mysql_fetch_array($res)) {
             $ret[] = $row;
         }
         return $ret;
