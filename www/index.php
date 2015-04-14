@@ -1,8 +1,9 @@
 <?php
 
-require_once __DIR__ . '/models/news.php';
+require_once __DIR__ . '/models/NewsArticle.php';
 
-$news = findAllNews();
+$model = new NewsArticle();
+var_dump($model->findAllNews());
 
 include __DIR__ . '/views/index.php';
 

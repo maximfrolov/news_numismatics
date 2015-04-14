@@ -16,7 +16,7 @@ class Db
         if (false === $res) {
             return false;
         }
-        while ($row = mysql_fetch_array($res)) {
+        while ($row = mysql_fetch_object($res)) {
             $ret[] = $row;
         }
         return $ret;

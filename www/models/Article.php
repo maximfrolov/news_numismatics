@@ -1,20 +1,19 @@
 <?php
 
-abstract class Article {
+require __DIR__ . '/../classes/Db.php';
 
-    public $title;
-    public $text;
-    public $date;
-}
+abstract class Article
+{
 
-class NewsArticle extends Article {
-
-    public $author;
-}
-
-class RepostArticle extends Article {
-
-    public $source;
-
+    public function findAllNews()
+    {
+        $db = new Db;
+        return $db->dbFindAllByQuery('
+        SELECT *
+        FROM news
+        ORDER BY date
+        DESC
+    ');
+    }
 }
 
