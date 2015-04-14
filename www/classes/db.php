@@ -4,8 +4,9 @@ class Db
 {
     public function __construct()
     {
-        mysql_connect('localhost', 'root', '');
-        mysql_selectdb('php2test');
+        $config = include __DIR__ . '/../config/db.php';
+        mysql_connect($config['host'], $config['user'], $config['password']);
+        mysql_selectdb($config['dbname']);
     }
 
     public function dbFindAllByQuery($sql)

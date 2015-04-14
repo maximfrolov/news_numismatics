@@ -17,3 +17,4 @@ class RepostArticle extends Article {
     public $source;
 
 }
+
