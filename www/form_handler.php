@@ -1,13 +1,13 @@
 <?php
 session_start();
 
-require __DIR__ . '/models/news.php';
+require __DIR__ . '/models/Article.php';
 
 if (isset($_POST['add']) &&
     !empty($_POST['title']) &&
     !empty($_POST['text']))
 {
-    addOneNews();
+    $this->addOneNews();
     header('Location: /form.php');
     exit;
 }
