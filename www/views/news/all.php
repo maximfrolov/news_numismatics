@@ -7,12 +7,16 @@
 <body>
 <h1>Новости из мира нумизматики</h1>
 <a href="/form.php">
-    Добавить новость
+    <p>Добавить новость</p>
 </a>
 
 <?php foreach ($items as $item) : ?>
     <article>
-        <h1><?php echo $item->title; ?></h1>
+        <h1>
+            <a href="/views/article.php">
+                <?php echo $item->title; ?>
+            </a>
+        </h1>
         <div><?php echo $item->text; ?></div>
         <div>
             <p>
@@ -22,7 +26,9 @@
                 <?php echo $item->author; ?>
             </p>
             <p>
-                <?php echo $item->source; ?>
+                <a href="<?php echo $item->source; ?>">
+                    <?php echo $item->source; ?>
+                </a>
             </p>
         </div>
     </article>
