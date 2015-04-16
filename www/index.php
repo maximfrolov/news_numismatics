@@ -1,9 +1,7 @@
 <?php
 
-require __DIR__ . '/models/NewsArticle.php';
+require __DIR__ . '/controllers/NewsController.php';
 
-$model = new NewsArticle();
-var_dump($model->findAllNews());
-
-//include __DIR__ . '/views/index.php';
+$controller = new NewsController();
+$controller->actionAll();
 
