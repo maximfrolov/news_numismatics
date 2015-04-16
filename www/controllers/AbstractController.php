@@ -1,12 +1,9 @@
 <?php
 
 
-class AbstractController
+abstract class AbstractController
 {
-    protected function getTemplatePath()
-    {
-        return __DIR__ . '/../views/news/';
-    }
+    abstract protected function getTemplatePath();
 
     protected function render($template, $date)
     {
